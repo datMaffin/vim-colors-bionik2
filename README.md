@@ -60,7 +60,7 @@ The color scheme was primarly designed for a light theme, which is why the color
 In a light theme, getting saturated colors is way harder than in a dark theme.
 The reason is that colors pop naturally when on a dark background.
 
-The colors will be taken from the following terminal color scheme.
+The colors will be taken from the following terminal color schemes.
 
 #### Light Terminal Colors
 
@@ -118,6 +118,6 @@ Use for the background dark gray `#1E1E1E` and for the foreground light gray `#E
 - Use a background and foreground color that is similar to what VSCode uses. (They must have their reason of why those colors where chosen.
 - It should be possible to distinguish between the colors, even when a blue filter ("night mode") is enabled.
 - The colors should look decent together
-- The intense and non instense did swap the regular and the "bright". My thinking is that the semantic behind "bright" on a light theme should be identical to the light theme: I.e., "bright" should be "muted". However, I am aware that most dark themes do not follow this rule. I am also not entirely sure why "bright" should also (sometimes) mean "more intense".
+- The regular and bright colors are swapped compared to the light version. My thinking is that the semantic behind "bright" in the dark theme should be identical to the light theme: I.e., "bright" should be equally "muted". However, I am aware that most dark themes do not follow this rule. I am also not entirely sure why "bright" should also (sometimes) mean "more intense".
 - Tried to make sure that all of the regular colors appear similar in brightness.
 - Tried to make sure that all of the "bright" colors appear similar in brightness.
