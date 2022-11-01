@@ -6,7 +6,7 @@ Successor of my bionik color scheme
 I am pretty happy with my original bionik colorscheme. It works well.
 However, I would like to work on the following shortcomings:
 - When in a dark theme terminal (like a Linux tty), it does not work well.
-- My colors chosen for the GUI could probably be improved ~~(want to replace them with the Tango colorscheme)~~
+- My colors chosen for the GUI could probably be improved (want to replace them with the Tango colorscheme)
 - vim-colortemplate looks really interesting
 
 
@@ -56,68 +56,55 @@ Or at least a font with nice italic letters like:
 ### Color Scheme
 
 While this vim colorscheme is intended to be used with the terminal color scheme that is used, for the GUI I had to choose concrete colors.
-The color scheme was primarly designed for a light theme, which is why the colors are very saturated.
-In a light theme, getting saturated colors is way harder than in a dark theme.
-The reason is that colors pop naturally when on a dark background.
+The GUI will effectively behave as if the following terminal color schemes are enabled.
 
-The colors will be taken from the following terminal color schemes.
+*The colorschemes are basically the Tango terminal theme.*
 
 #### Light Terminal Colors
 
-Use for the background white `#ffffff` and for the foreground black `#000000`
+Use for the background white `#FFFFFF` and for the foreground black `#000000`.
 
 | ANSI Code | Color                     | used by the colorscheme |
 |-----------|---------------------------|-------------------------|
-| 0         | Black: `#252525`          | ?                       |
-| 1         | Red: `#e60000`            | ?                       |
-| 2         | Green: `#00b800`          | ?                       |
-| 3         | Yellow: `#e66e00`         | ?                       |
-| 4         | Blue: `#0a5594`           | ?                       |
-| 5         | Magenta: `#b30070`        | ?                       |
-| 6         | Cyan: `#00988E`           | ?                       |
-| 7         | White: `#cccccc`          | ?                       |
-| 8         | Bright Black: `#7f7f7f`   | ?                       |
-| 9         | Bright Red: `#ff3236`     | ?                       |
-| 10        | Bright Green: `#34ee34`   | ?                       |
-| 11        | Bright Yellow: `#ffa552`  | ?                       |
-| 12        | Bright Blue: `#428ecf`    | ?                       |
-| 13        | Bright Magenta: `#ec4fb1` | ?                       |
-| 14        | Bright Cyan: `#4BCBCF`    | ?                       |
-| 15        | Bright White: `#ededed`   | ?                       |
+| 0         | Black: `#2E3436`          | ?                       |
+| 1         | Red: `#CC0000`            | ?                       |
+| 2         | Green: `#4E9A06`          | ?                       |
+| 3         | Yellow: `#C4A000`         | ?                       |
+| 4         | Blue: `#3465A4`           | ?                       |
+| 5         | Magenta: `#75507B`        | ?                       |
+| 6         | Cyan: `#06989A`           | ?                       |
+| 7         | White: `#D3D7CF`          | ?                       |
+| 8         | Bright Black: `#555753`   | ?                       |
+| 9         | Bright Red: `#EF2929`     | ?                       |
+| 10        | Bright Green: `#8AE234`   | ?                       |
+| 11        | Bright Yellow: `#D6C643`  | ?                       |
+| 12        | Bright Blue: `#729FCF`    | ?                       |
+| 13        | Bright Magenta: `#AD7FA8` | ?                       |
+| 14        | Bright Cyan: `#34E2E2`    | ?                       |
+| 15        | Bright White: `#EEEEEC`   | ?                       |
 
-##### Rational
-- Use full black on white. Will result in the best possible contrast. If a user is blinded by the white, I am of the opinion that the brightness of the monitor(s) should be reduced.
-- Text in any of the colors should be visible on white background.
-- It should be possible to distinguish between the colors, even when a blue filter ("night mode") is enabled.
-- The colors should look decent together
+The "Bright Yellow" value was changed such that it is (barely) readable on a white background.
+
 
 #### Dark Terminal Colors
 
-Use for the background dark gray `#1E1E1E` and for the foreground light gray `#E0E0E0`
+Use for the background white `#D4D4D4` and for the foreground black `#1E1E1E`
 
 | ANSI Code | Color                     | used by the colorscheme |
 |-----------|---------------------------|-------------------------|
-| 0         | Black: `#000000`          | ?                       |
-| 1         | Red: `#e32d30`            | ?                       |
-| 2         | Green: `#33e833`          | ?                       |
-| 3         | Yellow: `#e09148`         | ?                       |
-| 4         | Blue: `#0c64ad`           | ?                       |
-| 5         | Magenta: `#ec4fb1`        | ?                       |
-| 6         | Cyan: `#4bcbcf`           | ?                       |
-| 7         | White: `#ffffff`          | ?                       |
-| 8         | Bright Black: `#363636`   | ?                       |
-| 9         | Bright Red: `#ba0000`     | ?                       |
-| 10        | Bright Green: `#00B800`   | ?                       |
-| 11        | Bright Yellow: `#e66e00`  | ?                       |
-| 12        | Bright Blue: `#0a5594`    | ?                       |
-| 13        | Bright Magenta: `#b30070` | ?                       |
-| 14        | Bright Cyan: `#00988e`    | ?                       |
-| 15        | Bright White: `#919191`   | ?                       |
-
-##### Rational
-- Use a background and foreground color that is similar to what VSCode uses. (They must have their reason of why those colors where chosen.
-- It should be possible to distinguish between the colors, even when a blue filter ("night mode") is enabled.
-- The colors should look decent together
-- The regular and bright colors are swapped compared to the light version. My thinking is that the semantic behind "bright" in the dark theme should be identical to the light theme: I.e., "bright" should be equally "muted". However, I am aware that most dark themes do not follow this rule. I am also not entirely sure why "bright" should also (sometimes) mean "more intense".
-- Tried to make sure that all of the regular colors appear similar in brightness.
-- Tried to make sure that all of the "bright" colors appear similar in brightness.
+| 0         | Black: `#2E3436`          | ?                       |
+| 1         | Red: `#CC0000`            | ?                       |
+| 2         | Green: `#4E9A06`          | ?                       |
+| 3         | Yellow: `#C4A000`         | ?                       |
+| 4         | Blue: `#3465A4`           | ?                       |
+| 5         | Magenta: `#75507B`        | ?                       |
+| 6         | Cyan: `#06989A`           | ?                       |
+| 7         | White: `#D3D7CF`          | ?                       |
+| 8         | Bright Black: `#555753`   | ?                       |
+| 9         | Bright Red: `#EF2929`     | ?                       |
+| 10        | Bright Green: `#8AE234`   | ?                       |
+| 11        | Bright Yellow: `#FCE94F`  | ?                       |
+| 12        | Bright Blue: `#729FCF`    | ?                       |
+| 13        | Bright Magenta: `#AD7FA8` | ?                       |
+| 14        | Bright Cyan: `#34E2E2`    | ?                       |
+| 15        | Bright White: `#EEEEEC`   | ?                       |
