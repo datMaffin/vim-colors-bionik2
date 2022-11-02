@@ -88,7 +88,9 @@ The "Bright Yellow" value was changed such that it is (barely) readable on a whi
 
 #### Dark Terminal Colors
 
-Use for the background white `#D4D4D4` and for the foreground black `#1E1E1E`
+VsCode uses for the foreground light gray `#D4D4D4` and for the background dark gray `#1E1E1E`.
+Tango on Linux uses for the foreground light gray `#D3D7CF` and for the background dark gray `#2E3436`.
+
 
 | ANSI Code | Color                     | used by the colorscheme |
 |-----------|---------------------------|-------------------------|
