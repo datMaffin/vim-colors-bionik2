@@ -41,6 +41,9 @@ Tag                  -> Special
 Typedef              -> Type
 ; }}}
 
+; Needed to not generate anything for 256
+Variant: gui 16
+
 Background: dark
 
 ; Color palette for dark variant {{{
@@ -82,9 +85,9 @@ Normal           gui_fg            gui_bg
 Terminal         gui_fg            gui_bg
 
 ; Use default foreground and background for terminal
-Variant: 256 16
-Normal           fg                bg
-Terminal         fg                bg
+Variant: 16
+Normal           none              none
+Terminal         none              none
 
 ; I want it to use the 16 colors except for gui (and termguicolors enabled)
 Variant: gui 16
@@ -172,9 +175,9 @@ Normal           gui_fg            gui_bg
 Terminal         gui_fg            gui_bg
 
 ; Use default foreground and background for terminal
-Variant: 256 16
-Normal           fg                bg
-Terminal         fg                bg
+Variant: 16
+Normal           none              none
+Terminal         none              none
 
 ; I want it to use the 16 colors except for gui (and termguicolors enabled)
 Variant: gui 16
