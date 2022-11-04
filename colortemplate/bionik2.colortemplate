@@ -111,6 +111,7 @@ StatusLine           none              blue              bold
 Pmenu                black             white
 PmenuSel             white             blue
 
+IncSearch            none              brightyellow      reverse
 Search               none              brightblack       reverse
 Visual               brightblack       brightwhite       reverse
 
@@ -201,6 +202,7 @@ StatusLine           blue              none              bold,reverse
 Pmenu                white             black
 PmenuSel             white             blue
 
+IncSearch            none              yellow            reverse
 Search               none              white             reverse
 Visual               brightblack       brightwhite       reverse
 
