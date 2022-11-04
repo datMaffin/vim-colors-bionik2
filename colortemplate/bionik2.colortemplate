@@ -1,0 +1,228 @@
+; vim: ft=colortemplate fdm=marker cc=22,40,58 et ts=2 sw=2
+
+; Information {{{
+; Mandatory
+Full name:     Bionik 2
+Short name:    bionik2
+Author:        Marvin Dostal
+; Optional
+Website:       https://github.com/datMaffin/vim-colors-bionik2
+Description:   Second version of my bionik colorscheme
+License:       Public domain
+Option Prefix: bionik2
+; }}}
+
+; Global definitions - put at the top of the colorscheme {{{
+Conditional          -> Statement
+CurSearch            -> IncSearch
+CursorLineFold       -> FoldColumn
+CursorLineSign       -> SignColumn
+Debug                -> Special
+Define               -> PreProc
+Delimiter            -> Special
+Float                -> Number
+Function             -> Identifier
+Include              -> PreProc
+Keyword              -> Statement
+Label                -> Statement
+Macro                -> PreProc
+MessageWindow        -> WarningMsg
+PopupNotification    -> WarningMsg
+PopupSelected        -> PmenuSel
+PreCondit            -> PreProc
+Repeat               -> Statement
+SpecialChar          -> Special
+SpecialComment       -> Special
+StatusLineTerm       -> StatusLine
+StatusLineTermNC     -> StatusLineNC
+StorageClass         -> Type
+Structure            -> Type
+Tag                  -> Special
+Typedef              -> Type
+; }}}
+
+Background: dark
+
+; Color palette for dark variant {{{
+
+; basically the (popular) Tango colorscheme
+
+; Color name                GUI                  Base256    Base16 (optional)
+Color: gui_fg               #d4d4d4                ~        none
+Color: gui_bg               #1e1e1e                ~        none
+Color: black                #2e3436                ~        Black
+Color: red                  #cc0000                ~        DarkRed
+Color: green                #4e9a06                ~        DarkGreen
+Color: yellow               #c4a000                ~        DarkYellow
+Color: blue                 #3465a4                ~        DarkBlue
+Color: magenta              #75507B                ~        DarkMagenta
+Color: cyan                 #06989a                ~        DarkCyan
+Color: white                #d3d7cf                ~        LightGrey
+Color: brightblack          #555753                ~        DarkGrey
+Color: brightred            #ef2929                ~        LightRed
+Color: brightgreen          #8ae234                ~        LightGreen
+Color: brightyellow         #fce94f                ~        LightYellow
+Color: brightblue           #729fcf                ~        LightBlue
+Color: brightmagenta        #ad7fa8                ~        LightMagenta
+Color: brightcyan           #34e2e2                ~        LightCyan
+Color: brightwhite          #eeeeec                ~        White
+; }}}
+
+; Terminal colors for dark variant {{{
+Term colors: black red green yellow blue magenta cyan white
+Term colors: brightblack brightred brightgreen brightyellow
+Term colors: brightblue brightmagenta brightcyan brightwhite
+; }}}
+
+; Highlight Definitions {{{
+
+; Set values for gui
+Variant: gui
+Normal           gui_fg            gui_bg
+Terminal         gui_fg            gui_bg
+
+; Use default foreground and background for terminal
+Variant: 256 16
+Normal           fg                bg
+Terminal         fg                bg
+
+; I want it to use the 16 colors except for gui (and termguicolors enabled)
+Variant: gui 16
+
+; Group              Foreground        Background        Attributes
+
+; GUI elements
+
+LineNr               none              brightblack
+CursorLineNr         none              brightblack       bold
+FoldColumn           cyan              none              reverse
+Folded               cyan              none              reverse,italic
+ColorColumn          none              brightblack
+CursorLine           none              brightblack ; might need to only allow this in gui
+MatchParen           none              yellow
+StatusLine           blue              none              bold,reverse
+Pmenu                white             black
+PmenuSel             white             blue
+
+Search               none              black             reverse
+Visual               none              none              reverse  ; might want to do something better here?
+
+; Actual text coloring
+Underlined           none              none              underline
+Error                red               none              reverse,bold
+ErrorMsg             red               none              reverse
+WarningMsg           yellow            none              reverse
+Constant             none              none              bold
+Boolean              red               none              bold
+String               red               none
+Character            red               none
+Number               red               none
+Identifier           cyan              none
+Statement            blue              none              bold,italic
+Comment              green             none
+Todo                 yellow            blue              underline,italic
+Special              magenta           none
+Title                blue              none              underline,bold
+PreProc              yellow            none
+Type                 magenta           none              bold,italic
+
+SpellBad             none              none              s=red
+SpellCap             none              none              s=blue
+SpellLocal           none              none              s=magenta
+SpellRare            none              none              s=cyan reverse
+
+; }}}
+
+
+Background: light
+
+; Color palette for light variant {{{
+; Color name                GUI                  Base256    Base16 (optional)
+Color: gui_fg               #000000                ~        none
+Color: gui_bg               #ffffff                ~        none
+Color: black                #2e3436                ~        Black
+Color: red                  #cc0000                ~        DarkRed
+Color: green                #4e9a06                ~        DarkGreen
+Color: yellow               #c4a000                ~        DarkYellow
+Color: blue                 #3465a4                ~        DarkBlue
+Color: magenta              #75507B                ~        DarkMagenta
+Color: cyan                 #06989a                ~        DarkCyan
+Color: white                #d3d7cf                ~        LightGrey
+Color: brightblack          #555753                ~        DarkGrey
+Color: brightred            #ef2929                ~        LightRed
+Color: brightgreen          #8ae234                ~        LightGreen
+Color: brightyellow         #d6c643                ~        LightYellow
+Color: brightblue           #729fcf                ~        LightBlue
+Color: brightmagenta        #ad7fa8                ~        LightMagenta
+Color: brightcyan           #34e2e2                ~        LightCyan
+Color: brightwhite          #eeeeec                ~        White
+; }}}
+
+; Terminal colors for light variant {{{
+Term colors: black red green yellow blue magenta cyan white
+Term colors: brightblack brightred brightgreen brightyellow
+Term colors: brightblue brightmagenta brightcyan brightwhite
+; }}}
+
+; Highlight Definitions {{{
+
+; Set values for gui
+Variant: gui
+Normal           gui_fg            gui_bg
+Terminal         gui_fg            gui_bg
+
+; Use default foreground and background for terminal
+Variant: 256 16
+Normal           fg                bg
+Terminal         fg                bg
+
+; I want it to use the 16 colors except for gui (and termguicolors enabled)
+Variant: gui 16
+
+; Group              Foreground        Background        Attributes
+
+; GUI elements
+
+LineNr               none              brightwhite
+CursorLineNr         none              brightwhite       bold
+FoldColumn           cyan              none              reverse
+Folded               cyan              none              reverse,italic
+ColorColumn          none              brightwhite
+CursorLine           none              brightwhite ; might need to only allow this in gui
+MatchParen           none              yellow
+StatusLine           blue              none              bold,reverse
+Pmenu                white             black
+PmenuSel             white             blue
+
+Search               none              black             reverse
+Visual               none              none              reverse  ; might want to do something better here?
+
+; Actual text coloring
+Underlined           none              none              underline
+Error                red               none              reverse,bold
+ErrorMsg             red               none              reverse
+WarningMsg           yellow            none              reverse
+Constant             none              none              bold
+Boolean              red               none              bold
+String               red               none
+Character            red               none
+Number               red               none
+Identifier           cyan              none
+Statement            blue              none              bold,italic
+Comment              green             none
+Todo                 yellow            blue              underline,italic
+Special              magenta           none
+Title                blue              none              underline,bold
+PreProc              yellow            none
+Type                 magenta           none              bold,italic
+
+SpellBad             none              none              s=red
+SpellCap             none              none              s=blue
+SpellLocal           none              none              s=magenta
+SpellRare            none              none              s=cyan reverse
+
+; }}}
+
+Background: any
+Include: _bw.colortemplate
+
