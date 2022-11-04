@@ -92,12 +92,16 @@ Terminal         none              none
 ; I want it to use the 16 colors except for gui (and termguicolors enabled)
 Variant: gui 16
 
+; TODO: for everything that has a colored background: use the reverse tag
+; the reason for this is that the background color used for the cursor line
+; will then not overwrite the background.
+
 ; Group              Foreground        Background        Attributes
 
 ; GUI elements
 
-LineNr               none               brightblack
-CursorLineNr         white              black             bold
+LineNr               none              brightblack
+CursorLineNr         white             black             bold
 FoldColumn           cyan              none              reverse
 Folded               cyan              none              reverse,italic
 ColorColumn          none              black
@@ -107,7 +111,7 @@ StatusLine           none              blue              bold
 Pmenu                black             white
 PmenuSel             white             blue
 
-Search               none              black             reverse
+Search               none              brightblack       reverse
 Visual               brightblack       brightwhite       reverse
 
 ; Actual text coloring
@@ -123,7 +127,7 @@ Number               red               none
 Identifier           cyan              none
 Statement            blue              none              bold,italic
 Comment              green             none
-Todo                 brightyellow      blue              underline,italic
+Todo                 blue              brightyellow      underline,italic,reverse
 Special              brightmagenta     none
 Title                blue              none              underline,bold
 PreProc              yellow            none
@@ -171,13 +175,13 @@ Term colors: brightblue brightmagenta brightcyan brightwhite
 
 ; Set values for gui
 Variant: gui
-Normal           gui_fg            gui_bg
-Terminal         gui_fg            gui_bg
+Normal               gui_fg            gui_bg
+Terminal             gui_fg            gui_bg
 
 ; Use default foreground and background for terminal
 Variant: 16
-Normal           none              none
-Terminal         none              none
+Normal               none              none
+Terminal             none              none
 
 ; I want it to use the 16 colors except for gui (and termguicolors enabled)
 Variant: gui 16
@@ -197,7 +201,7 @@ StatusLine           blue              none              bold,reverse
 Pmenu                white             black
 PmenuSel             white             blue
 
-Search               none              black             reverse
+Search               none              white             reverse
 Visual               brightblack       brightwhite       reverse
 
 ; Actual text coloring
@@ -213,7 +217,7 @@ Number               red               none
 Identifier           cyan              none
 Statement            blue              none              bold,italic
 Comment              green             none
-Todo                 brightyellow      blue              underline,italic
+Todo                 blue              brightyellow      underline,italic,reverse
 Special              magenta           none
 Title                blue              none              underline,bold
 PreProc              yellow            none
