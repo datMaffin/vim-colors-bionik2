@@ -176,10 +176,18 @@ Variant: gui
 Normal               gui_fg            gui_bg
 Terminal             gui_fg            gui_bg
 
+IncSearch            brightyellow      gui_fg            reverse
+Search               blue              gui_bg            reverse
+Visual               brightblack       brightwhite       reverse
+
 ; Use default foreground and background for terminal
 Variant: 16
 Normal               none              none
 Terminal             none              none
+
+IncSearch            brightyellow      fg                reverse
+Search               brightblue        fg                reverse
+Visual               brightblack       brightwhite       reverse
 
 ; I want it to use the 16 colors except for gui (and termguicolors enabled)
 Variant: gui 16
@@ -201,12 +209,6 @@ PmenuSel             black             brightblue
 ;Pmenu                brightwhite       black
 ;PmenuSel             brightwhite       blue
 
-
-; use reverse to have a consistent result on both regular and reversed text; 
-; using reverse makes sure that reverse is always active. Reverse is not a toggle!
-IncSearch            brightyellow      black             reverse
-Search               brightblue        black             reverse
-Visual               brightblack       brightwhite       reverse
 
 ; Actual text coloring
 Underlined           none              none              underline
