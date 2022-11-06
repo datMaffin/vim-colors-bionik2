@@ -92,9 +92,6 @@ Terminal         none              none
 ; I want it to use the 16 colors except for gui (and termguicolors enabled)
 Variant: gui 16
 
-; TODO: for everything that has a colored background: use the reverse tag
-; the reason for this is that the background color used for the cursor line
-; will then not overwrite the background.
 
 ; Group              Foreground        Background        Attributes
 
@@ -128,7 +125,7 @@ Number               red               none
 Identifier           cyan              none
 Statement            blue              none              bold,italic
 Comment              green             none
-Todo                 blue              brightyellow      underline,italic,reverse
+Todo                 yellow            blue              underline,italic,reverse
 Special              brightmagenta     none
 Title                blue              none              underline,bold
 PreProc              yellow            none
@@ -148,22 +145,22 @@ Background: light
 ; Color name                GUI                  Base256    Base16 (optional)
 Color: gui_fg               #000000                ~        none
 Color: gui_bg               #ffffff                ~        none
-Color: black                #2e3436                ~        Black
-Color: red                  #cc0000                ~        DarkRed
-Color: green                #4e9a06                ~        DarkGreen
-Color: yellow               #c4a000                ~        DarkYellow
-Color: blue                 #3465a4                ~        DarkBlue
-Color: magenta              #75507B                ~        DarkMagenta
-Color: cyan                 #06989a                ~        DarkCyan
-Color: white                #d3d7cf                ~        LightGrey
-Color: brightblack          #555753                ~        DarkGrey
-Color: brightred            #ef2929                ~        LightRed
-Color: brightgreen          #8ae234                ~        LightGreen
-Color: brightyellow         #d6c643                ~        LightYellow
-Color: brightblue           #729fcf                ~        LightBlue
-Color: brightmagenta        #ad7fa8                ~        LightMagenta
-Color: brightcyan           #34e2e2                ~        LightCyan
-Color: brightwhite          #eeeeec                ~        White
+Color: black                #252525                ~        Black
+Color: red                  #e60000                ~        DarkRed
+Color: green                #00B800                ~        DarkGreen
+Color: yellow               #e66e00                ~        DarkYellow
+Color: blue                 #0a5594                ~        DarkBlue
+Color: magenta              #b30070                ~        DarkMagenta
+Color: cyan                 #00988e                ~        DarkCyan
+Color: white                #cccccc                ~        LightGrey
+Color: brightblack          #7f7f7f                ~        DarkGrey
+Color: brightred            #ff3236                ~        LightRed
+Color: brightgreen          #34ee34                ~        LightGreen
+Color: brightyellow         #ffa552                ~        LightYellow
+Color: brightblue           #428ecf                ~        LightBlue
+Color: brightmagenta        #ec4fb1                ~        LightMagenta
+Color: brightcyan           #4bcbcf                ~        LightCyan
+Color: brightwhite          #ededed                ~        White
 ; }}}
 
 ; Terminal colors for light variant {{{
@@ -196,14 +193,19 @@ CursorLineNr         none              brightwhite       bold
 FoldColumn           cyan              none              reverse
 Folded               cyan              none              reverse,italic
 ColorColumn          none              brightwhite
-CursorLine           none              brightwhite ; might need to only allow this in gui
-MatchParen           none              yellow
+CursorLine           none              brightwhite ; TODO: add a note that brightwhite should be slightly different from the background color.
+MatchParen           none              brightyellow
 StatusLine           blue              none              bold,reverse
-Pmenu                white             black
-PmenuSel             white             blue
+Pmenu                black             white
+PmenuSel             black             brightblue
+;Pmenu                brightwhite       black
+;PmenuSel             brightwhite       blue
 
-IncSearch            none              yellow            reverse
-Search               none              white             reverse
+
+; use reverse to have a consistent result on both regular and reversed text; 
+; using reverse makes sure that reverse is always active. Reverse is not a toggle!
+IncSearch            brightyellow      black             reverse
+Search               brightblue        black             reverse
 Visual               brightblack       brightwhite       reverse
 
 ; Actual text coloring
@@ -219,16 +221,27 @@ Number               red               none
 Identifier           cyan              none
 Statement            blue              none              bold,italic
 Comment              green             none
-Todo                 blue              brightyellow      underline,italic,reverse
+Todo                 brightyellow      blue              underline,italic,reverse
 Special              magenta           none
 Title                blue              none              underline,bold
 PreProc              yellow            none
 Type                 magenta           none              bold,italic
 
-SpellBad             none              none              s=red
-SpellCap             none              none              s=blue
-SpellLocal           none              none              s=magenta
-SpellRare            none              none              s=cyan reverse
+
+; Diff
+DiffAdd              green             brightwhite       reverse,bold
+DiffChange           yellow            brightwhite       reverse,italic
+DiffDelete           red               brightwhite       reverse,italic
+DiffText             magenta           brightwhite       reverse,bold
+
+; Spell
+SpellBad             none              none              s=red underdouble
+SpellCap             none              none              s=blue underdouble
+SpellLocal           none              none              s=magenta underline
+SpellRare            none              none              s=cyan underline
+
+; Other
+Ignore               white       none              italic
 
 ; }}}
 
