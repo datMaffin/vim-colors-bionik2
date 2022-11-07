@@ -53,22 +53,23 @@ Background: dark
 ; Color name                GUI                  Base256    Base16 (optional)
 Color: gui_fg               #d2b48c                ~
 Color: gui_bg               #062626                ~
-Color: black                #2e3436                ~        Black
-Color: red                  #cc0000                ~        DarkRed
 Color: green                #32CD32                ~        DarkGreen
-Color: yellow               #ffac3c                ~        DarkYellow
-Color: blue                 #3074a8                ~        DarkBlue
-Color: magenta              #563ab3                ~        DarkMagenta
-Color: cyan                 #23b7b7                ~        DarkCyan
-Color: white                #ffd7a2                ~        LightGrey
+Color: black                #2e3436                ~        Black
 Color: brightblack          #555753                ~        DarkGrey
-Color: brightred            #ef2929                ~        LightRed
-Color: brightgreen          #a0fca0                ~        LightGreen
-Color: brightyellow         #ffff00                ~        LightYellow
-Color: brightblue           #a4d5fa                ~        LightBlue
-Color: brightmagenta        #bda9fa                ~        LightMagenta
-Color: brightcyan           #9ef9f9                ~        LightCyan
+Color: white                #ffd7a2                ~        LightGrey
 Color: brightwhite          #ffffff                ~        White
+
+Color: red                  #e60000                ~        DarkRed
+Color: yellow               #e66e00                ~        DarkYellow
+Color: blue                 #2277be                ~        DarkBlue
+Color: magenta              #b30070                ~        DarkMagenta
+Color: cyan                 #0db1a7                ~        DarkCyan
+Color: brightred            #ff3236                ~        LightRed
+Color: brightgreen          #34ee34                ~        LightGreen
+Color: brightyellow         #ffa552                ~        LightYellow
+Color: brightblue           #5ea9e9                ~        LightBlue
+Color: brightmagenta        #ec4fb1                ~        LightMagenta
+Color: brightcyan           #4bcbcf                ~        LightCyan
 ; }}}
 
 ; Terminal colors for dark variant {{{
@@ -84,7 +85,7 @@ Variant: gui
 Normal               gui_fg            gui_bg
 Terminal             gui_fg            gui_bg
 
-IncSearch            brightyellow      gui_fg            reverse
+IncSearch            gui_fg            blue              reverse
 Search               blue              gui_fg            reverse
 Visual               brightblack       brightwhite       reverse
 
@@ -105,7 +106,7 @@ Variant: gui 16
 
 ; GUI elements
 
-LineNr               none              brightblack
+LineNr               white       brightblack
 CursorLineNr         white             black             bold
 FoldColumn           cyan              none              reverse
 Folded               cyan              none              reverse,italic
@@ -129,7 +130,7 @@ Number               red               none
 Identifier           cyan              none
 Statement            blue              none              bold,italic
 Comment              green             none
-Todo                 yellow            blue              underline,italic,reverse
+Todo                 yellow            black             underline,italic,reverse
 Special              brightmagenta     none
 Title                blue              none              underline,bold
 PreProc              yellow            none
@@ -149,6 +150,7 @@ SpellRare            none              none              s=cyan underline
 
 ; Other
 Ignore               brightblack       none              italic
+NonText              blue              none
 
 ; }}}
 
