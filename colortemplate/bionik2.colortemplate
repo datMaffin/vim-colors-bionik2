@@ -106,7 +106,7 @@ Variant: gui 16
 
 ; GUI elements
 
-LineNr               white       brightblack
+LineNr               white             brightblack
 CursorLineNr         white             black             bold
 FoldColumn           cyan              none              reverse
 Folded               cyan              none              reverse,italic
@@ -193,7 +193,7 @@ Normal               gui_fg            gui_bg
 Terminal             gui_fg            gui_bg
 
 IncSearch            brightyellow      gui_fg            reverse
-Search               blue              gui_fg            reverse
+Search               brightblue        gui_fg            reverse
 Visual               brightblack       brightwhite       reverse
 
 ; Use default foreground and background for terminal
