@@ -1,9 +1,9 @@
 # vim-colors-bionik2
-Successor of my Vim color scheme "bionik" 
+Successor of my Vim color scheme [bionik](https://github.com/datMaffin/vim-colors-bionik)
 
 ![screenshot](screenshot.png)
 
-## Why a successor to [bionik](https://github.com/datMaffin/vim-colors-bionik)
+## Why a successor to bionik
 
 I am pretty happy with my original bionik colorscheme. It works well.
 However, I would like to work on the following shortcomings:
