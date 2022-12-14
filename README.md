@@ -38,7 +38,7 @@ People (hopefully) write in-line comments for the **important, non-obvious** stu
 ## Recommendations
 ### Font
 Use a font with nice looking distinct italic letters like:
-- [Mononoki](https://madmalik.github.io/mononoki/)/[Monofoki]()https://github.com/datMaffin/monofoki
+- [Mononoki](https://madmalik.github.io/mononoki/) / [Monofoki](https://github.com/datMaffin/monofoki)
 - Consolas (non-libre)
 - [Victor Mono](https://rubjo.github.io/victor-mono/)
 - [Fantasque Mono](https://github.com/belluzj/fantasque-sans)
