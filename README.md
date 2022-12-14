@@ -38,20 +38,20 @@ People (hopefully) write in-line comments for the **important, non-obvious** stu
 ## Recommendations
 ### Font
 Use a font with nice looking distinct italic letters like:
-- Mononoki/Monofoki
-- Consolas
-- Victor Mono
-- Fantasque Mono
-- IBM Plex Mono
+- [Mononoki](https://madmalik.github.io/mononoki/)/[Monofoki]()https://github.com/datMaffin/monofoki
+- Consolas (non-libre)
+- [Victor Mono](https://rubjo.github.io/victor-mono/)
+- [Fantasque Mono](https://github.com/belluzj/fantasque-sans)
+- [IBM Plex Mono](https://www.ibm.com/plex/)
 - Dank Mono (non-free)
 - Operator Mono (non-free)
 
 Or at least a font with nice italic letters like:
-- Hack
-- Source Code Pro
-- Jetbrains Mono
-- Iosevka
-- Ubuntu Mono
+- [Hack](https://sourcefoundry.org/hack/)
+- [Source Code Pro](https://github.com/adobe-fonts/source-code-pro)
+- [Jetbrains Mono](https://www.jetbrains.com/lp/mono/)
+- [Iosevka](https://typeof.net/Iosevka/)
+- [Ubuntu Mono](https://design.ubuntu.com/font/)
 
 ### Terminal Colors
 Make sure that "bright white" is slightly different from the background colors.
