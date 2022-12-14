@@ -1,5 +1,5 @@
 # vim-colors-bionik2
-Successor of my bionik color scheme
+Successor of my Vim color scheme "bionik" 
 
 ## Why a successor to bionik
 
