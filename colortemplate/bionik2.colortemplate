@@ -128,11 +128,11 @@ String               red               none
 Character            red               none
 Number               red               none
 Identifier           cyan              none
-Statement            blue              none              bold,italic
+Statement            brightblue        none              bold,italic
 Comment              green             none
 Todo                 yellow            black             underline,italic,reverse
 Special              brightmagenta     none
-Title                blue              none              underline,bold
+Title                brightblue        none              underline,bold
 PreProc              yellow            none
 Type                 magenta           none              bold,italic
 
