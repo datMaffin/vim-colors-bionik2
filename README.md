@@ -8,19 +8,19 @@ Successor of my Vim color scheme [bionik](https://github.com/datMaffin/vim-color
 I am pretty happy with my original bionik colorscheme. It works well.
 However, I would like to work on the following shortcomings:
 - When in a dark theme terminal (like a Linux tty), it does not work well.
-- My colors chosen for the GUI could probably be improved (want to replace them with the Tango colorscheme)
-- vim-colortemplate looks really interesting
+- My colors chosen for the GUI could probably be improved ~(want to replace them with the Tango colorscheme)~
+- [vim-colortemplate](https://github.com/lifepillar/vim-colortemplate) looks really interesting
 
 
 ## Goals of bionik2
-- Dark/light should depend on the environment; in a gui Vim default to light, though.
+- Dark/light should depend on the environment; ~in a GUI Vim default to light, though.~
 - Be familiar to Visual Studio 2010 and Xcode light
   + Use green for the comments.
   + Use blue and magenta for keywords (and types).
 - Great terminal "integration"
   + Use italic, bold and underlined also in the terminal.
   + Mainly use the (16) ANSI colors of the terminal.
-  + Try to provide a good experience on a variety of selected terminal colors.
+  + Try to provide a good experience on a variety of selected terminal color schemes.
 
 ## Non-Goals
 - There is no attempt in considering color blindness
