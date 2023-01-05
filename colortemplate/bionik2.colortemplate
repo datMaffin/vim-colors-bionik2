@@ -143,8 +143,8 @@ DiffDelete           red               brightwhite       reverse,italic
 DiffText             magenta           brightwhite       reverse,bold
 
 ; Spell
-SpellBad             none              none              s=red underdouble
-SpellCap             none              none              s=blue underdouble
+SpellBad             none              none              s=red underline
+SpellCap             none              none              s=blue underline
 SpellLocal           none              none              s=magenta underline
 SpellRare            none              none              s=cyan underline
 
@@ -253,8 +253,8 @@ DiffDelete           red               brightwhite       reverse,italic
 DiffText             magenta           brightwhite       reverse,bold
 
 ; Spell
-SpellBad             none              none              s=red underdouble
-SpellCap             none              none              s=blue underdouble
+SpellBad             none              none              s=red underline
+SpellCap             none              none              s=blue underline
 SpellLocal           none              none              s=magenta underline
 SpellRare            none              none              s=cyan underline
 
