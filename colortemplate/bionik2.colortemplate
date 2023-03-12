@@ -48,28 +48,26 @@ Background: dark
 
 ; Color palette for dark variant {{{
 
-; basically the (popular) Tango colorscheme
+; Color name         GUI               Base256           Base16 (optional)
+Color: gui_fg        #d2b48c           ~
+Color: gui_bg        #062626           ~
+Color: green         #32CD32           ~                 DarkGreen
+Color: black         #2e3436           ~                 Black
+Color: brightblack   #555753           ~                 DarkGrey
+Color: white         #ffd7a2           ~                 LightGrey
+Color: brightwhite   #ffffff           ~                 White
 
-; Color name                GUI                  Base256    Base16 (optional)
-Color: gui_fg               #d2b48c                ~
-Color: gui_bg               #062626                ~
-Color: green                #32CD32                ~        DarkGreen
-Color: black                #2e3436                ~        Black
-Color: brightblack          #555753                ~        DarkGrey
-Color: white                #ffd7a2                ~        LightGrey
-Color: brightwhite          #ffffff                ~        White
-
-Color: red                  #e60000                ~        DarkRed
-Color: yellow               #e66e00                ~        DarkYellow
-Color: blue                 #0061a5                ~        DarkBlue
-Color: magenta              #b30070                ~        DarkMagenta
-Color: cyan                 #0db1a7                ~        DarkCyan
-Color: brightred            #ff3236                ~        LightRed
-Color: brightgreen          #34ee34                ~        LightGreen
-Color: brightyellow         #ffa552                ~        LightYellow
-Color: brightblue           #5ea9e9                ~        LightBlue
-Color: brightmagenta        #ec4fb1                ~        LightMagenta
-Color: brightcyan           #4bcbcf                ~        LightCyan
+Color: red           #e60000           ~                 DarkRed
+Color: yellow        #e66e00           ~                 DarkYellow
+Color: blue          #0061a5           ~                 DarkBlue
+Color: magenta       #b30070           ~                 DarkMagenta
+Color: cyan          #0db1a7           ~                 DarkCyan
+Color: brightred     #ff3236           ~                 LightRed
+Color: brightgreen   #34ee34           ~                 LightGreen
+Color: brightyellow  #ffa552           ~                 LightYellow
+Color: brightblue    #5ea9e9           ~                 LightBlue
+Color: brightmagenta #ec4fb1           ~                 LightMagenta
+Color: brightcyan    #4bcbcf           ~                 LightCyan
 ; }}}
 
 ; Terminal colors for dark variant {{{
@@ -116,6 +114,7 @@ MatchParen           yellow            none              reverse
 StatusLine           none              blue              bold
 Pmenu                black             white
 PmenuSel             white             blue
+lspReference         none              brightblack       underline
 
 ; Actual text coloring
 Underlined           none              none              underline
@@ -158,25 +157,25 @@ NonText              blue              none
 Background: light
 
 ; Color palette for light variant {{{
-; Color name                GUI                  Base256    Base16 (optional)
-Color: gui_fg               #000000                ~        none
-Color: gui_bg               #ffffff                ~        none
-Color: black                #252525                ~        Black
-Color: red                  #e60000                ~        DarkRed
-Color: green                #00B800                ~        DarkGreen
-Color: yellow               #e66e00                ~        DarkYellow
-Color: blue                 #0a5594                ~        DarkBlue
-Color: magenta              #b30070                ~        DarkMagenta
-Color: cyan                 #00988e                ~        DarkCyan
-Color: white                #cccccc                ~        LightGrey
-Color: brightblack          #7f7f7f                ~        DarkGrey
-Color: brightred            #ff3236                ~        LightRed
-Color: brightgreen          #34ee34                ~        LightGreen
-Color: brightyellow         #ffa552                ~        LightYellow
-Color: brightblue           #428ecf                ~        LightBlue
-Color: brightmagenta        #ec4fb1                ~        LightMagenta
-Color: brightcyan           #4bcbcf                ~        LightCyan
-Color: brightwhite          #ededed                ~        White
+; Color name         GUI               Base256           Base16 (optional)
+Color: gui_fg        #000000           ~                 none
+Color: gui_bg        #ffffff           ~                 none
+Color: black         #252525           ~                 Black
+Color: red           #e60000           ~                 DarkRed
+Color: green         #00B800           ~                 DarkGreen
+Color: yellow        #e66e00           ~                 DarkYellow
+Color: blue          #0a5594           ~                 DarkBlue
+Color: magenta       #b30070           ~                 DarkMagenta
+Color: cyan          #00988e           ~                 DarkCyan
+Color: white         #cccccc           ~                 LightGrey
+Color: brightblack   #7f7f7f           ~                 DarkGrey
+Color: brightred     #ff3236           ~                 LightRed
+Color: brightgreen   #34ee34           ~                 LightGreen
+Color: brightyellow  #ffa552           ~                 LightYellow
+Color: brightblue    #428ecf           ~                 LightBlue
+Color: brightmagenta #ec4fb1           ~                 LightMagenta
+Color: brightcyan    #4bcbcf           ~                 LightCyan
+Color: brightwhite   #ededed           ~                 White
 ; }}}
 
 ; Terminal colors for light variant {{{
@@ -222,8 +221,7 @@ MatchParen           none              brightyellow
 StatusLine           blue              none              bold,reverse
 Pmenu                black             white
 PmenuSel             black             brightblue
-;Pmenu                brightwhite       black
-;PmenuSel             brightwhite       blue
+lspReference         none              brightwhite       underline
 
 
 ; Actual text coloring
