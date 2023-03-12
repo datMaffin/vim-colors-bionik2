@@ -51,7 +51,6 @@ Background: dark
 ; Color name         GUI               Base256           Base16 (optional)
 Color: gui_fg        #d2b48c           ~
 Color: gui_bg        #062626           ~
-Color: blackblack    #000000           ~
 Color: green         #32CD32           ~                 DarkGreen
 Color: black         #2e3436           ~                 Black
 Color: brightblack   #555753           ~                 DarkGrey
@@ -88,9 +87,6 @@ IncSearch            gui_fg            blue              reverse
 Search               blue              gui_fg            reverse
 Visual               brightblack       brightwhite       reverse
 
-; from vim-lsp
-lspReference         none              blackblack
-
 ; Use default foreground and background for terminal
 Variant: 16
 Normal               none              none
@@ -99,9 +95,6 @@ Terminal             none              none
 IncSearch            yellow            brightwhite       reverse
 Search               blue              brightwhite       reverse
 Visual               brightblack       brightwhite       reverse
-
-; from vim-lsp
-lspReference         none              brightblack       underline
 
 ; I want it to use the 16 colors except for gui (and termguicolors enabled)
 Variant: gui 16
@@ -121,6 +114,7 @@ MatchParen           yellow            none              reverse
 StatusLine           none              blue              bold
 Pmenu                black             white
 PmenuSel             white             blue
+lspReference         none              brightblack       underline
 
 ; Actual text coloring
 Underlined           none              none              underline
@@ -166,7 +160,6 @@ Background: light
 ; Color name         GUI               Base256           Base16 (optional)
 Color: gui_fg        #000000           ~                 none
 Color: gui_bg        #ffffff           ~                 none
-Color: brighterwhite #f3f3f3           ~                 White
 Color: black         #252525           ~                 Black
 Color: red           #e60000           ~                 DarkRed
 Color: green         #00B800           ~                 DarkGreen
@@ -202,9 +195,6 @@ IncSearch            brightyellow      gui_fg            reverse
 Search               brightblue        gui_fg            reverse
 Visual               brightblack       brightwhite       reverse
 
-; from vim-lsp
-lspReference         none              brighterwhite
-
 ; Use default foreground and background for terminal
 Variant: 16
 Normal               none              none
@@ -213,9 +203,6 @@ Terminal             none              none
 IncSearch            brightyellow      black             reverse
 Search               brightblue        black             reverse
 Visual               brightblack       brightwhite       reverse
-
-; from vim-lsp
-lspReference         none              brightwhite       underline
 
 ; I want it to use the 16 colors except for gui (and termguicolors enabled)
 Variant: gui 16
@@ -234,6 +221,7 @@ MatchParen           none              brightyellow
 StatusLine           blue              none              bold,reverse
 Pmenu                black             white
 PmenuSel             black             brightblue
+lspReference         none              brightwhite       underline
 
 
 ; Actual text coloring
