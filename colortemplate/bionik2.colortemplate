@@ -114,7 +114,7 @@ MatchParen           yellow            none              reverse
 StatusLine           none              blue              bold
 Pmenu                black             white
 PmenuSel             white             blue
-lspReference         none              brightblack       underline,nocombine
+lspReference         none              black             underline
 
 ; Actual text coloring
 Underlined           none              none              underline
@@ -221,7 +221,7 @@ MatchParen           none              brightyellow
 StatusLine           blue              none              bold,reverse
 Pmenu                black             white
 PmenuSel             black             brightblue
-lspReference         none              brightwhite       underline,nocombine
+lspReference         none              brightwhite       underline
 
 
 ; Actual text coloring
