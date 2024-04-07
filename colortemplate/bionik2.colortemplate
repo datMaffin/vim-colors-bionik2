@@ -136,10 +136,10 @@ PreProc              yellow            none
 Type                 magenta           none              bold,italic
 
 ; Diff
-DiffAdd              green             brightwhite       reverse,bold
-DiffChange           yellow            brightwhite       reverse,italic
-DiffDelete           red               brightwhite       reverse,italic
-DiffText             magenta           brightwhite       reverse,bold
+DiffAdd              green             brightwhite       reverse
+DiffChange           yellow            brightwhite       reverse
+DiffDelete           red               brightwhite       reverse
+DiffText             magenta           brightwhite       reverse
 
 ; Spell
 SpellBad             none              none              s=red underline
@@ -176,6 +176,10 @@ Color: brightblue    #428ecf           ~                 LightBlue
 Color: brightmagenta #ec4fb1           ~                 LightMagenta
 Color: brightcyan    #4bcbcf           ~                 LightCyan
 Color: brightwhite   #ededed           ~                 White
+Color: bbrightred     #fcc9ca          ~                 LightRed
+Color: bbrightgreen   #bafcba          ~                 LightGreen
+Color: bbrightyellow  #fcd5b0          ~                 LightYellow
+Color: bbrightmagenta #fcbfe5          ~                 LightMagenta
 ; }}}
 
 ; Terminal colors for light variant {{{
@@ -237,7 +241,7 @@ Number               red               none
 Identifier           cyan              none
 Statement            blue              none              bold,italic
 Comment              green             none
-Todo                 brightyellow      blue              underline,italic,reverse
+Todo                 yellow            none              underline,italic
 Special              magenta           none
 Title                blue              none              underline,bold
 PreProc              yellow            none
@@ -245,10 +249,10 @@ Type                 magenta           none              bold,italic
 
 
 ; Diff
-DiffAdd              green             brightwhite       reverse,bold
-DiffChange           yellow            brightwhite       reverse,italic
-DiffDelete           red               brightwhite       reverse,italic
-DiffText             magenta           brightwhite       reverse,bold
+DiffAdd              none              bbrightgreen
+DiffChange           none              bbrightyellow
+DiffDelete           none              bbrightred
+DiffText             none              bbrightmagenta
 
 ; Spell
 SpellBad             none              none              s=red underline
